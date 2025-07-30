@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiBookmark, FiClock, FiMapPin, FiStar } from "react-icons/fi";
+import { FiBookmark, FiClock, FiMapPin } from "react-icons/fi";
 
 const JobCard = ({ job, showRemoteFlag = true }) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -24,10 +24,6 @@ const JobCard = ({ job, showRemoteFlag = true }) => {
             isBookmarked ? "text-yellow-500" : "text-gray-200"
           }`}
         >
-          {/* {isBookmarked ? (
-            <FiStar size={18} fill="currentColor" />
-          ) : (
-          )} */}
           <FiBookmark size={18} fill="currentColor" />
         </button>
       </div>
